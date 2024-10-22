@@ -667,10 +667,6 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .isolate {
   isolation: isolate;
 }
