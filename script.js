@@ -105,3 +105,118 @@ function updateCartModal(){
   cartCounter.innerHTML = cart.length;
 
 }
+
+//remover
+
+cartItemsContainer.addEventListener("click", function (event){
+  if(event.target.classList.contains("remove-from-cart-btn")){
+    const name = event.target.getAttribute("data-name")
+
+    removeItemCart(name);
+  }
+
+})
+
+function removeItemCart(name){
+  const index = cart.findIndex(item => item.name === name);
+
+  if(index !== -1){
+    const item = cart[index];
+    
+    if(item.quantity > 1){
+      item.quantity -= 1;
+      updateCartModal();
+      return;
+    }
+
+    cart.splice(index, 1);
+    updateCartModal();
+
+  }
+
+}
+
+addressInput.addEventListener("input", function(event){
+  let inputValue = event.target.value;
+
+  if(inputValue !== ""){
+    addressInput.classList.remove("border-red-500")
+    addressWarn.classList.add("hidden")
+  }
+
+
+})
+
+
+addressInput.addEventListener("input", function(event){
+  let inputValue = event.target.value;
+
+  if(inputValue !== ""){
+    addressInput.classList.remove("border-red-500")
+    addressWarn.classList.add("hidden")
+  }
+})
+
+
+
+checkoutBtn.addEventListener("click", function(){
+
+  const isOpen = checkRestaurantOpen();
+  if(!isOpen){
+
+    Toastify({
+      text: "Ops o restaurante está fechado!",
+      duration: 3000,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "#ef4444",
+      },
+    }).showToast();
+
+    return;
+  }
+
+  if(cart.length === 0) return;
+  if(addressInput.value === ""){
+    addressWarn.classList.remove("hidden")
+    addressInput.classList.add("border-red-500")
+    return;
+  }
+
+  //Enviar o pedido para api whats
+  const cartItems = cart.map((item) => {
+    return (
+      ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`
+    )
+  }).join("")
+
+  const message = encodeURIComponent(cartItems)
+  const phone = "45999997579"
+
+  window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
+
+  cart = [];
+  updateCartModal();
+
+})
+
+
+function checkRestaurantOpen(){
+  const data = new Date();
+  const hora = data.getHours();
+  return hora >= 7 && hora < 19;
+}
+
+const spanItem = document.getElementById("date-span")
+const isOpen = checkRestaurantOpen();
+
+if(isOpen){
+  spanItem.classList.remove("bg-red-500");
+  spanItem.classList.add("bg-green-600")
+}else{
+  spanItem.classList.remove("bg-green-500")
+  spanItem.classList.add("bg-red-500")
+}
