@@ -2817,38 +2817,6 @@ body{
   font-weight: 600;
 }
 
-main {
-  gap: 16px;
-  /* Ajuste o valor conforme necessário */
-}
-
-/* Esconder o main quando o carrossel está visível */
-
-@media (min-width: 1630px) {
-  main {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 1629px) {
-  main {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    justify-items: center;
-    /* Centraliza os itens */
-  }
-
-  m11{
-    margin: 500px;
-  }
-
-  /* Estilo para o terceiro item */
-
-  main > div:nth-child(3) {
-    grid-column: span 2;
-    /* Faz o terceiro item ocupar as duas colunas */
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2995,3 +2963,4 @@ main {
     }
   }
 }
+
