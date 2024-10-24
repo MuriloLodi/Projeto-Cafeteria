@@ -2,8 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
     background-color: rgb(255, 255, 255);
 }
 
+.swiper .swiper-pagination-bullet{
+    background-image: linear-gradient( #a87f01,#F5F4F2);
+    height: 15px;
+    width: 15px;
+    
+  }
+  
+  .swiper .swiper-pagination-bullet-active{
+    border: 2px solid #D2A960;
+  }
 
+
+  .swiper-slide {
+    position: relative; /* Necessário para posicionar os elementos corretamente */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%; /* Ajuste a posição vertical conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D2A960; /* Cor do texto */
+    font-size: 25px; /* Tamanho da fonte */
+    z-index: 10; /* Garante que o texto esteja acima da imagem */
+}
+
+.btn-overlay {
+    position: absolute;
+    top: 60%; /* Ajuste a posição vertical conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #D2A960; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10; /* Garante que o botão esteja acima da imagem */
+    width: 58%;
+}
+
+.text-overlay2{
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto */
+    font-size: 35px; /* Tamanho da fonte */
+    z-index: 10; /* Garante que o texto esteja acima da imagem */
+    font-weight: 600;
+}
+
+main {
+    gap: 16px; /* Ajuste o valor conforme necessário */
+}
+
+/* Esconder o main quando o carrossel está visível */
+@media (min-width: 1630px) {
+    main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+}
+
+@media (max-width: 1629px) {
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center; /* Centraliza os itens */
+    }
+
+    m11{
+        margin: 500px;
+    }
+
+    /* Estilo para o terceiro item */
+    main > div:nth-child(3) {
+        grid-column: span 2; /* Faz o terceiro item ocupar as duas colunas */
+    }
+}
