@@ -46,7 +46,7 @@
     </header>
     <!--Fim Parte de cima-->
 
-    <div class="flex m-12 gap-6 max-[1270px]:hidden">
+    <div class="flex m-12 justify-around gap-6 max-[1270px]:hidden">
         <div class="relative">
             <img class="w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
             <div class="text-overlay1 absolute inset-0 flex items-center justify-center">BEBIDAS</div>
@@ -67,7 +67,7 @@
 
     <!--Carrossel Tela Media-->
     <div class="relative w-full min-[1270px]:hidden max-[1231px]:hidden">
-        <div class="absolute top-0 left-0 m-4 md">
+        <div class="absolute top-0 left-0 m-4">
             <div class="swiper w-[680px] h-[540px]">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -96,6 +96,35 @@
         </div>
     </div>
     <!--Fim Carrossel Tela Media-->
+
+    <!--Tela Pequena-->
+    <div class="min-[1230px]:hidden max-md:hidden">
+        <div class="justify-around">
+            <div class=" grid m-6 grid-cols-2 gap-7">
+                <div class="relative">
+                    <img class="w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
+                    <div class="text-overlay1 absolute inset-0 flex items-center justify-center">BEBIDAS</div>
+                </div>
+                <div class="relative">
+                    <img class="w-[540px] h-[793px] cover" src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg"
+                        alt="">
+                    <div class="text-overlay1 absolute inset-0 flex items-center justify-center">DOCES</div>
+                </div>
+
+            </div>
+            <div class="relative m-6">
+                <img class="w-full h-[393px]" src="img/Frame 14.png" alt="">
+                <div class="text-overlay5 w-full absolute inset-0 flex items-center justify-center">E MUITO MAIS...
+                </div>
+                <a href="index.html">
+                    <button class="btn-overlay1 absolute bottom-2 left-1/2 transform -translate-x-1/2">VEJA NOSSO
+                        CARDÁPIO</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--FIM Tela Pequena-->
+
 
 
     <!--Carrossel No Cell-->
@@ -127,6 +156,7 @@
 
 
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/ba682a02a4.js" crossorigin="anonymous"></script>

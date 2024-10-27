@@ -100,3 +100,15 @@ body{
 .cover{
     object-fit: cover;
 }
+
+.text-overlay5{
+    position: absolute;
+    top: 40%; /* Ajuste a posição vertical conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto */
+    font-size: 35px; /* Tamanho da fonte */
+    z-index: 10; /* Garante que o texto esteja acima da imagem */
+    font-weight: 600;
+    color: #D2A960;
+}
