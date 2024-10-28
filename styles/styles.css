@@ -20,6 +20,16 @@ body{
   .swiper .swiper-pagination-bullet-active{
     border: 2px solid #D2A960;
   }
+.swiper1 .swiper-pagination-bullet{
+    background-image: linear-gradient( #a87f01,#F5F4F2);
+    height: 15px;
+    width: 15px;
+    
+  }
+  
+  .swiper1 .swiper-pagination-bullet-active{
+    border: 2px solid #D2A960;
+  }
 
 
   .swiper-slide {

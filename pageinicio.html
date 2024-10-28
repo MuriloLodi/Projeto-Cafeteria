@@ -180,6 +180,39 @@
         </div>
     </div>
 
+    <div class="relative overflow-hidden flex justify-center items-center">
+        <div class="w-full max-w-[1360px]">
+            <div class="swiper1 overflow-hidden mx-6">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/img1.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img2.jpeg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img3.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img4.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img5.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img6.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                </div>
+    
+                <div class="mt-9">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -207,6 +240,41 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+
+
+        });
+        const swiper1 = new Swiper('.swiper1', {
+        // Optional parameters
+        loop: true,
+        direction: 'horizontal',
+        grabCursor: true, // Corrigido
+        spaceBetween: 10,
+        slidesPerView: 5,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true
+        },
+
+        // Autoplay configuration
+        autoplay: {
+            delay: 2000, // Tempo entre as transições (3000ms = 3 segundos)
+            disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+            1024: {  // Em telas grandes (desktop), mostrar 5 slides
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            0: { // Em celulares menores, mostrar 1 slide
+                slidesPerView: 3,
+                spaceBetween: 8,
+            }
+        }
 
 
         });
