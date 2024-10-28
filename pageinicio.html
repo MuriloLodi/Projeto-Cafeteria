@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
     <!--FIM FONTES GOOGEL-->
+    <script src="reveal.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/output.css" />
@@ -21,7 +24,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <!--Parte de cima-->
     <header class="w-full h-[500px] md:h-[820px] bg-zinc-900 bg-video bg-cover bg-center">
         <div class="flex p-4 items-center justify-center">
@@ -46,16 +49,17 @@
     </header>
     <!--Fim Parte de cima-->
 
+    <!--Tela Pc-->
     <div class="flex m-12 justify-around gap-6 max-[1270px]:hidden">
-        <div class="relative">
-            <img class="w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
+        <div class="part1 relative">
+            <img class=" w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
             <div class="text-overlay1 absolute inset-0 flex items-center justify-center">BEBIDAS</div>
         </div>
-        <div class="relative">
+        <div class="part2 relative">
             <img class="w-[540px] h-[793px] cover" src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg" alt="">
             <div class="text-overlay1 absolute inset-0 flex items-center justify-center">DOCES</div>
         </div>
-        <div class="relative">
+        <div class="part3 relative">
             <img class="w-[540px] h-[793px]" src="img/Frame 14.png" alt="">
             <div class="text-overlay4 w-full absolute inset-0 flex items-center justify-center">E MUITO MAIS...</div>
             <a href="index.html">
@@ -64,9 +68,10 @@
             </a>
         </div>
     </div>
+    <!--Fim Tela Pc-->
 
     <!--Carrossel Tela Media-->
-    <div class="relative w-full min-[1270px]:hidden max-[1231px]:hidden">
+    <div class="part1 relative w-full min-[1270px]:hidden max-[1231px]:hidden">
         <div class="absolute top-0 left-0 m-4">
             <div class="swiper w-[680px] h-[540px]">
                 <!-- Additional required wrapper -->
@@ -101,18 +106,18 @@
     <div class="min-[1230px]:hidden max-md:hidden">
         <div class="justify-around">
             <div class=" grid m-6 grid-cols-2 gap-7">
-                <div class="relative">
+                <div class="part1 relative">
                     <img class="w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
                     <div class="text-overlay1 absolute inset-0 flex items-center justify-center">BEBIDAS</div>
                 </div>
-                <div class="relative">
+                <div class="part2 relative">
                     <img class="w-[540px] h-[793px] cover" src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg"
                         alt="">
                     <div class="text-overlay1 absolute inset-0 flex items-center justify-center">DOCES</div>
                 </div>
 
             </div>
-            <div class="relative m-6">
+            <div class="part4 relative m-6">
                 <img class="w-full h-[393px]" src="img/Frame 14.png" alt="">
                 <div class="text-overlay5 w-full absolute inset-0 flex items-center justify-center">E MUITO MAIS...
                 </div>
@@ -128,7 +133,7 @@
 
 
     <!--Carrossel No Cell-->
-    <div class="md:hidden">
+    <div class="part1 md:hidden">
         <div class="swiper w-96 h-[340px] ml-4 m-4">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -153,10 +158,30 @@
     </div>
     <!--Fim Carrossel No Cell-->
 
+    <div class="relative mb-6">
+        <div class="bg-img1 w-full h-[520px] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="part1 text-overlay6 w-full text-center">NOSSO CANTINHO</div>
+        <a href="index.html"><button class="part2 btn-overlay7 ">CONHEÇA</button></a>
+    </div>
+
+    <div class="flex w-full justify-center bg-white p-5">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <img src="img/starbuck.png" alt="Imagem do Doce">
+            <div class="text-content max-md:text-center">
+                <h2 class="part1">COMPROMISSO COM A QUALIDADE</h2>
+                <h1 class="part2">FABRICAÇÃO PRÓPRIA COM REPOSIÇÃO DIÁRIA</h1>
+                <p class="part3">Nossos processos são otimizados para garantir que todos os produtos sejam entregues fresquinhos para
+                    você. Nossas bebidas são preparadas na hora! Nossos pães e doces são produzidos e repostos
+                    diariamente.
+                    Prezamos pela qualidade e excelência em cada detalhe.</p>
+                <a href="#" class="button max-md:text-center part5">CONHEÇA MAIS</a>
+            </div>
+        </div>
+    </div>
 
 
 
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/ba682a02a4.js" crossorigin="anonymous"></script>

@@ -2028,6 +2028,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
 }
@@ -2069,6 +2074,10 @@ video {
 
 .bg-home {
   background-image: url('/img/fundoimg.jpg');
+}
+
+.bg-img1 {
+  background-image: url('/img/coffee.jpeg');
 }
 
 .bg-video {
@@ -2466,6 +2475,10 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2800,6 +2813,10 @@ video {
   forced-color-adjust: none;
 }
 
+.part1, .part2, .part3, .part4, part5 {
+  visibility: hidden;
+}
+
 body{
   background-color: rgb(255, 255, 255);
 }
@@ -2831,6 +2848,7 @@ body{
   /* Tamanho da fonte */
   z-index: 10;
   /* Garante que o texto esteja acima da imagem */
+  font-weight: 600;
 }
 
 .btn-overlay {
@@ -2938,6 +2956,86 @@ body{
   color: #D2A960;
 }
 
+.text-overlay6{
+  position: absolute;
+  top: 45%;
+  /* Ajuste a posição vertical conforme necessário */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Cor do texto */
+  font-size: 35px;
+  /* Tamanho da fonte */
+  z-index: 10;
+  /* Garante que o texto esteja acima da imagem */
+  font-weight: 600;
+  color: white;
+}
+
+.btn-overlay7{
+  position: absolute;
+  top: 60%;
+  /* Ajuste a posição vertical conforme necessário */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  color: #D2A960;
+  /* Cor do botão */
+  background-color: white;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 10;
+  /* Garante que o botão esteja acima da imagem */
+  font-size: 15px;
+  transition: .5s;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.text-content h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #D2A960;
+  margin-bottom: 10px;
+}
+
+.text-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #D2A960;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #7d7d7d;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #D2A960;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #b48738;
+}
+
+.btn-overlay7:hover{
+  background-color: #a8957500;
+  border: 1px solid #fff;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3026,6 +3124,10 @@ body{
 @media not all and (min-width: 768px) {
   .max-md\:hidden {
     display: none;
+  }
+
+  .max-md\:text-center {
+    text-align: center;
   }
 }
 

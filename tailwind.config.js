@@ -9,7 +9,7 @@ module.exports = {
       backgroundImage:{
         "home": "url('/img/fundoimg.jpg')",
         "video": "url('/img/cafeteria-1920w.png')",
-        "img1": "url('/img/starbucks_cafe.png')"
+        "img1": "url('/img/coffee.jpeg')"
       }
     },
   },
