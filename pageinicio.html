@@ -24,7 +24,7 @@
     <title>Document</title>
 </head>
 
-<body >
+<body>
     <!--Parte de cima-->
     <header class="w-full h-[500px] md:h-[820px] bg-zinc-900 bg-video bg-cover bg-center">
         <div class="flex p-4 items-center justify-center">
@@ -171,7 +171,8 @@
             <div class="text-content max-md:text-center">
                 <h2 class="part1">COMPROMISSO COM A QUALIDADE</h2>
                 <h1 class="part2">FABRICAÇÃO PRÓPRIA COM REPOSIÇÃO DIÁRIA</h1>
-                <p class="part3">Nossos processos são otimizados para garantir que todos os produtos sejam entregues fresquinhos para
+                <p class="part3">Nossos processos são otimizados para garantir que todos os produtos sejam entregues
+                    fresquinhos para
                     você. Nossas bebidas são preparadas na hora! Nossos pães e doces são produzidos e repostos
                     diariamente.
                     Prezamos pela qualidade e excelência em cada detalhe.</p>
@@ -205,31 +206,56 @@
                         <img src="img/img6.jpg" alt="" class="w-[265px] h-[525px] object-cover">
                     </div>
                 </div>
-    
+
                 <div class="mt-9">
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="w-full h-full bg-[#D2A960] flex justify-around items-center">
-        <div><img class="w-[155px] h-auto" src="img/lodis.png"></div>
-        <div>
-            <nav class="ml-auto ">
-                <ul class="flex space-x-3">
-                    <li><a href="pageinicio.html" class=" text-lg text-white">Início</a></li>
-                    <li><a href="index.html" class=" text-lg text-white">Cardápio</a></li>
-                </ul>
-            </nav>
+<footer class="bg-[#bcb096] text-white py-6">
+    <div class="max-w-screen-xl mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center">
+        <!-- Logo -->
+        <div class="text-lg w-[150px] h-auto font-bold mb-4 md:mb-0">
+            <img src="img/lodis.png" alt="">
         </div>
-        <div>
-            <i class="bi bi-tiktok"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <button><i class="bi bi-whatsapp"></i>FALE PELO WHATS</button>
+
+        <!-- Navegação -->
+        <nav class="flex space-x-4 mb-4 md:mb-0">
+            <a href="#home" class="text-white hover:text-gray-300 font-semibold">HOME</a>
+            <a href="#conheca" class="text-white hover:text-gray-300 font-semibold">CONHEÇA</a>
+            <a href="#bolos" class="text-white hover:text-gray-300 font-semibold">BOLOS</a>
+            <a href="#cardapio" class="text-white hover:text-gray-300 font-semibold">CARDÁPIO</a>
+            <a href="#contato" class="text-white hover:text-gray-300 font-semibold">CONTATO</a>
+            <a href="#guideline" class="text-white hover:text-gray-300 font-semibold">GUIDE LINE</a>
+        </nav>
+
+        <!-- Redes sociais e botão WhatsApp -->
+        <div class="flex flex-col items-center space-y-2 md:mt-0">
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Botão do WhatsApp -->
+            <a href="#"
+                class="border border-white text-white rounded-full px-4 py-2 text-sm hover:bg-white hover:text-[#bcb096] flex items-center space-x-2">
+                <i class="bi bi-whatsapp w-4"></i> 
+                <span>FALE PELO WHATS</span>
+            </a>
         </div>
-    </footer>
-    
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-center text-sm text-white/80 mt-4">
+        © 2024 | Todos os direitos reservados.
+    </p>
+</footer>
+
+
+
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -261,37 +287,37 @@
 
         });
         const swiper1 = new Swiper('.swiper1', {
-        // Optional parameters
-        loop: true,
-        direction: 'horizontal',
-        grabCursor: true, // Corrigido
-        spaceBetween: 10,
-        slidesPerView: 5,
+            // Optional parameters
+            loop: true,
+            direction: 'horizontal',
+            grabCursor: true, // Corrigido
+            spaceBetween: 10,
+            slidesPerView: 5,
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true
-        },
-
-        // Autoplay configuration
-        autoplay: {
-            delay: 2000, // Tempo entre as transições (3000ms = 3 segundos)
-            disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
-        },
-
-        // Responsive breakpoints
-        breakpoints: {
-            1024: {  // Em telas grandes (desktop), mostrar 5 slides
-                slidesPerView: 5,
-                spaceBetween: 10,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
             },
-            0: { // Em celulares menores, mostrar 1 slide
-                slidesPerView: 3,
-                spaceBetween: 8,
+
+            // Autoplay configuration
+            autoplay: {
+                delay: 2000, // Tempo entre as transições (3000ms = 3 segundos)
+                disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                1024: {  // Em telas grandes (desktop), mostrar 5 slides
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+                0: { // Em celulares menores, mostrar 1 slide
+                    slidesPerView: 3,
+                    spaceBetween: 8,
+                }
             }
-        }
 
 
         });
