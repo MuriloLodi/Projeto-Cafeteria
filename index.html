@@ -12,258 +12,316 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
     <!--FIM FONTES GOOGEL-->
+    <script src="reveal.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/output.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-    
-    <!--HEADER-->
-    
-    <header class="w-full h-[520px] bg-zinc-900 bg-home bg-cover bg-center">
+    <!--Parte de cima-->
+    <header class="w-full h-[500px] md:h-[820px] bg-zinc-900 bg-video bg-cover bg-center">
         <div class="flex p-4 items-center justify-center">
             <img src="img/logo.jpg" class="rounded-full h-20 md:ml-10" alt="">
 
             <nav class="ml-auto">
                 <ul class="flex space-x-3 md:space-x-10 md:mr-10">
-                    <li><a href="pageinicio.html" class=" text-lg text-white">Início</a></li>
-                    <li><a href="index.html" class=" text-lg text-white">Cardápio</a></li>
-                    <li><a href="pageinicio.html" class="text-2xl text-white"><i class="bi bi-instagram"></i></a>
+                    <li><a href="index.html" class=" text-lg text-white">Início</a></li>
+                    <li><a href="menu.html" class=" text-lg text-white">Cardápio</a></li>
+                    <li><a href="#" class="text-2xl text-white"><i class="bi bi-instagram"></i></a>
                     </li>
-                    <li><a href="pageinicio.html" class="text-2xl text-white"><i class="bi bi-whatsapp"></i></a>
+                    <li><a href="#" class="text-2xl text-white"><i class="bi bi-whatsapp"></i></a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="w-full h-full flex flex-col mt-3  items-center">
-            <img src="img/logo.jpg" alt="Logo" class="rounded-full w-32 h-32 shadow-lg hover:scale-110 duration-200" />
-
-            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Lodi's Coffe</h1>
-
-            <span class="text-white font-medium">Rua Marechal Floriano 195, Toledo - PR</span>
-
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium">Seg á Sab - 7:00 as 19:00</span>
-            </div>
+        <div>
+            <h1 class="text-center mt-6 md:mt-14 text-7xl md:text-9xl font-semibold md:font-bold text-white ">WE
+                LOVE<br>TO
+                MAKE<br>COFFEE<br>FOR YOU</h1>
         </div>
     </header>
-    <!--FIM DO HEADER-->
+    <!--Fim Parte de cima-->
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
-        Conheça nosso menu
-    </h2>
-
-    <!--MENU-->
-    <div id="menu">
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-            <!--PRODUTO ITEM 1-->
-            <div class="flex gap-2">
-                <img src="img/PAO DO CEBOLINHA.jpg" alt="Pão de Cebolinha"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-row-start-2 duration-300">
-
-
-                <div>
-                    <p class="font-bold">PAO DO CEBOLINHA</p>
-                    <p class="text-sm">Pão de fermentação natural, recheado com creme de queijo adocicado e pasta de
-                        cebola, alho e salsão.</p>
-
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$16.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110 hover:-row-start-2 duration-300"
-                            data-name="PAO DO CEBOLINHA" data-price="16.00">
-
-                            <i class="bi bi-cart-plus-fill text-lg text-white "></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM 1-->
-
-            <!--PRODUTO ITEM 2-->
-            <div class="flex gap-2">
-                <img src="img/PISTACHIO BUN.jpg" alt="PISTACHIO BUN"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-
-                <div>
-                    <p class="font-bold">PISTACHIO BUN</p>
-                    <p class="text-sm">Pão de massa soft, com cobertura de caramelo, pasta de pistache e pistache
-                        caramelizado.</p>
-
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$19.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110 hover:-rotate-2 duration-300"
-                            data-name="PISTACHIO BUN" data-price="19.00">
-
-                            <i class="bi bi-cart-plus-fill text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM 2-->
-
-            <!--PRODUTO ITEM 3-->
-            <div class="flex gap-2">
-                <img src="img/CROISSANT TRADICIONAL.png" alt="CROISSANT TRADICIONAL"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-
-                <div>
-                    <p class="font-bold">CROISSANT TRADICIONAL</p>
-                    <p class="text-sm">Massa aerada amanteigada com crosta crocante e dourada. O melhor sem igual</p>
-
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$10.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110 hover:-rotate-2 duration-300"
-                            data-name="CROISSANT TRADICIONAL" data-price="10.00">
-
-                            <i class="bi bi-cart-plus-fill text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM 3-->
-
-            <!--PRODUTO ITEM 4-->
-            <div class="flex gap-2">
-                <img src="img/CROISSANT SALAME.jpg" alt="CROISSANT SALAME"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-
-
-                <div>
-                    <p class="font-bold">CROISSANT SALAME</p>
-                    <p class="text-sm">Croissant com fatias de salame, pasta cremosa de manjericão, rúcula e queijo.
-                    </p>
-
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$22.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110 hover:-rotate-2 duration-300"
-                            data-name="CROISSANT SALAME" data-price="22.00">
-
-                            <i class="bi bi-cart-plus-fill text-lg text-white "></i>
-                        </button>
-                    </div>
-                </div>
-                <!--FIM PRODUTO ITEM 4-->
-        </main>
-
-        <div class="mx-auto max-w-7xl px-2 my-2">
-            <h2 class="font-bold text-3xl">Drinks</h2>
+    <!--Tela Pc-->
+    <div class="flex m-12 justify-around gap-6 max-[1270px]:hidden">
+        <div class="part1 relative">
+            <img class=" w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
+            <div class="text-overlay1 absolute inset-0 flex items-center justify-center">BEBIDAS</div>
         </div>
-
-        <!--GRID DRINKS-->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
-
-            <!--BEBIDA ITEM -->
-            <div class="flex gap-2 w-full">
-                <img src="img/MÔNICA CHOCO BERRY.jpg" alt="MÔNICA CHOCO BERRY"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-
-
-                <div class="w-full">
-                    <p class="font-bold">MÔNICA CHOCO BERRY</p>
-                    <p class="text-sm">Bebida a base de leite integral, leite condensado, cacau em pó e geleia de
-                        morango, combinados em uma deliciosa mistura.
-                    </p>
-
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$20.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110 hover:-rotate-2 duration-300"
-                            data-name="MÔNICA CHOCO BERRY" data-price="20.00">
-
-                            <i class="bi bi-cart-plus-fill text-lg text-white "></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-            <!--FIM BEBIDA ITEM -->
-
-            <!--BEBIDA ITEM -->
-            <div class="flex gap-2 w-full">
-                <img src="img/AMERICANO.png" alt="AMERICANO"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-
-
-                <div class="w-full">
-                    <p class="font-bold">AMERICANO</p>
-                    <p class="text-sm">Espresso duplo suavizado com água. 380ml
-                    </p>
-
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$20.00</p>
-                        <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110 hover:-rotate-2 duration-300"
-                            data-name="AMERICANO" data-price="20.00">
-
-                            <i class="bi bi-cart-plus-fill text-lg text-white "></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-            <!--FIM BEBIDA ITEM -->
-
-
+        <div class="part2 relative">
+            <img class="w-[540px] h-[793px] cover" src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg" alt="">
+            <div class="text-overlay1 absolute inset-0 flex items-center justify-center">DOCES</div>
         </div>
-        <!--FIM GRID DRINKS-->
-
-
+        <div class="part3 relative">
+            <img class="w-[540px] h-[793px]" src="img/Frame 14.png" alt="">
+            <div class="text-overlay4 w-full absolute inset-0 flex items-center justify-center">E MUITO MAIS...</div>
+            <a href="index.html">
+                <button class="btn-overlay1 absolute bottom-2 left-1/2 transform -translate-x-1/2">VEJA NOSSO
+                    CARDÁPIO</button>
+            </a>
+        </div>
     </div>
-    <!--FIM MENU-->
+    <!--Fim Tela Pc-->
 
-    <!--MODAL CART-->
-    <div class=" bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden " id="cart-modal">
-        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+    <!--Carrossel Tela Media-->
+    <div class="part1 relative w-full min-[1270px]:hidden max-[1231px]:hidden">
+        <div class="absolute top-0 left-0 m-4">
+            <div class="swiper w-[680px] h-[540px]">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/starbucks_cafe.png" alt="">
+                        <div class="text-overlay2">BEBIDAS</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg" alt="">
+                        <div class="text-overlay2">DOCES</div>
+                    </div>
+                </div>
 
-            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
-            <p class="font-bold">Total <span id="cart-total">0.00</span></p>
+                <div class="mt-9">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
 
-            <p class="font-bold mt-4">Endereço de entrega:</p>
-            <input type="text" placeholder="Digite seu endereço completo" id="address"
-                class="w-full border-2 p-1 rounded my-1">
+        </div>
 
-            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+        <div class="absolute top-0 right-0 m-4">
+            <img class="w-[500px] h-[540px] items-center" src="img/Frame 14.png" alt="">
+            <div class="text-overlay">E MUITO MAIS...</div>
+            <a href="index.html"><button class="btn-overlay">VEJA NOSSO CARDÁPIO</button></a>
+        </div>
+    </div>
+    <!--Fim Carrossel Tela Media-->
 
-            <div class="flex items-center justify-between mt-5 w-full">
-                <button id="close-modal-btn">Fechar</button>
-                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+    <!--Tela Pequena-->
+    <div class="min-[1230px]:hidden max-md:hidden">
+        <div class="justify-around">
+            <div class=" grid m-6 grid-cols-2 gap-7">
+                <div class="part1 relative">
+                    <img class="w-[540px] h-[793px] cover" src="img/starbucks_cafe.png" alt="">
+                    <div class="text-overlay1 absolute inset-0 flex items-center justify-center">BEBIDAS</div>
+                </div>
+                <div class="part2 relative">
+                    <img class="w-[540px] h-[793px] cover" src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg"
+                        alt="">
+                    <div class="text-overlay1 absolute inset-0 flex items-center justify-center">DOCES</div>
+                </div>
+
+            </div>
+            <div class="part4 relative m-6">
+                <img class="w-full h-[393px]" src="img/Frame 14.png" alt="">
+                <div class="text-overlay5 w-full absolute inset-0 flex items-center justify-center">E MUITO MAIS...
+                </div>
+                <a href="index.html">
+                    <button class="btn-overlay1 absolute bottom-2 left-1/2 transform -translate-x-1/2">VEJA NOSSO
+                        CARDÁPIO</button>
+                </a>
             </div>
         </div>
     </div>
-    <!--FIM MODAL CART-->
+    <!--FIM Tela Pequena-->
 
 
-    <!--BUTTON CART FOOTER-->
-    <footer class="w-full bg-red-700 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-            (<span id="cart-count">0</span>)
-            Veja meu carrinho
-            <i class="bi bi-cart-check-fill text-lg text-white"></i>
-        </button>
-    </footer>
-    <!--FIM BUTTON CART FOOTER-->
+
+    <!--Carrossel No Cell-->
+    <div class="part1 md:hidden">
+        <div class="swiper w-96 h-[340px] ml-4 m-4">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/starbucks_cafe.png" alt="">
+                    <div class="text-overlay2">BEBIDAS</div>
+                </div>
+                <div class="swiper-slide "><img src="img/Doce-Grao-2_p8363_destaque_image_mob_resized.jpeg" alt="">
+                    <div class="text-overlay2">DOCES</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Frame 14.png" alt="">
+                    <div class="text-overlay">E MUITO MAIS...</div>
+                    <a href="index.html"><button class="btn-overlay">VEJA NOSSO CARDÁPIO</button></a>
+                </div>
+            </div>
+
+            <div class="mt-9">
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!--Fim Carrossel No Cell-->
+
+    <div class="relative mb-6">
+        <div class="bg-img1 w-full h-[520px] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="part1 text-overlay6 w-full text-center">NOSSO CANTINHO</div>
+        <a href="index.html"><button class="part2 btn-overlay7 ">CONHEÇA</button></a>
+    </div>
+
+    <div class="flex w-full justify-center bg-white p-5">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <img src="img/starbuck.png" alt="Imagem do Doce">
+            <div class="text-content max-md:text-center">
+                <h2 class="part1">COMPROMISSO COM A QUALIDADE</h2>
+                <h1 class="part2">FABRICAÇÃO PRÓPRIA COM REPOSIÇÃO DIÁRIA</h1>
+                <p class="part3">Nossos processos são otimizados para garantir que todos os produtos sejam entregues
+                    fresquinhos para
+                    você. Nossas bebidas são preparadas na hora! Nossos pães e doces são produzidos e repostos
+                    diariamente.
+                    Prezamos pela qualidade e excelência em cada detalhe.</p>
+                <a href="#" class="button max-md:text-center part5">CONHEÇA MAIS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative overflow-hidden flex justify-center items-center">
+        <div class="w-full max-w-[1360px]">
+            <div class="swiper1 overflow-hidden mx-6">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/img1.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img2.jpeg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img3.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img4.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img5.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img6.jpg" alt="" class="w-[265px] h-[525px] object-cover">
+                    </div>
+                </div>
+
+                <div class="mt-9">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="bg-[#bcb096] text-white py-6">
+    <div class="max-w-screen-xl mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center">
+        <!-- Logo -->
+        <div class="text-lg w-[150px] h-auto font-bold mb-4 md:mb-0">
+            <img src="img/lodis.png" alt="">
+        </div>
+
+        <!-- Navegação -->
+        <nav class="flex space-x-4 mb-4 md:mb-0">
+            <a href="pageinicio.html" class="text-white hover:text-gray-300 font-semibold">HOME</a>
+            <a href="#">|</a>
+            <a href="index.html" class="text-white hover:text-gray-300 font-semibold">CARDÁPIO</a>
+        </nav>
+
+        <!-- Redes sociais e botão WhatsApp -->
+        <div class="flex flex-col items-center space-y-2 md:mt-0">
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Botão do WhatsApp -->
+            <a href="#"
+                class="border border-white text-white rounded-full px-4 py-2 text-sm hover:bg-white hover:text-[#bcb096] flex items-center space-x-2">
+                <i class="bi bi-whatsapp w-4"></i> 
+                <span>FALE PELO WHATS</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-center text-sm text-white/80 mt-4">
+        © 2024 | Todos os direitos reservados.
+    </p>
+</footer>
+
+
+
+
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/ba682a02a4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            direction: 'horizontal',
+            grapCursor: true,
+            spaceBetween: 10,
+            slidesPerView: 1,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+        const swiper1 = new Swiper('.swiper1', {
+            // Optional parameters
+            loop: true,
+            direction: 'horizontal',
+            grabCursor: true, // Corrigido
+            spaceBetween: 10,
+            slidesPerView: 5,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Autoplay configuration
+            autoplay: {
+                delay: 2000, // Tempo entre as transições (3000ms = 3 segundos)
+                disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                1024: {  // Em telas grandes (desktop), mostrar 5 slides
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+                0: { // Em celulares menores, mostrar 1 slide
+                    slidesPerView: 3,
+                    spaceBetween: 8,
+                }
+            }
+
+
+        });
+
+
+    </script>
+
 </body>
 
 </html>
